@@ -277,7 +277,7 @@
   <p>使用root权限编写grub.cfg，让Grub引导系统运行</p>
   <pre>cat - &gt; ./mnt/boot/grub/grub.cfg &lt;&lt; EOF
 set timeout=10
-menuentry 'liangnijian' {
+menuentry 'minilinux' {
 linux (hd0,msdos1)/boot/bzImage console=tty0
 initrd (hd0,msdos1)/boot/initrd 
 } 
